@@ -14,7 +14,7 @@ This project automates the complete workflow of creating and delivering personal
 - ✍️ Adds personalized text like “Prepared for [Client Name]”
 - 📤 Uploads the final video automatically to Loom via browser automation
 - 📊 Updates a linked Google Sheet with the Loom video link
-- 🧩 Calls a custom API to retrieve the Loom **embed HTML snippet**
+- 🧩 Calls a custom API to retrieve the Loom embed HTML snippet
 - 🔁 Appends that embed code back into the Google Sheet — ready for use in emails, landing pages, etc.
 
 ---
@@ -32,24 +32,22 @@ This project automates the complete workflow of creating and delivering personal
 
 ## 📁 Project Structure
 
+```
 FinalAutomationVideo/
-├── server/ # Node.js server and upload logic
-│ ├── index.js
-│ ├── screenshot.js
-│ └── uploadloom.js
-├── video_engine/ # Python scripts for video generation
-│ ├── personalvideo.py
-│ ├── batch_generator.py
-│ ├── generate_mask.py
-├── models/ # OpenCV DNN model files
-├── base.mp4 # Speaker video
-├── mask.png # AI-generated mask
-├── .env # Configuration file (excluded in git)
-├── README.md # This file
-
-yaml
-Copy
-Edit
+├── server/                # Node.js server and upload logic
+│   ├── index.js
+│   ├── screenshot.js
+│   └── uploadloom.js
+├── video_engine/          # Python scripts for video generation
+│   ├── personalvideo.py
+│   ├── batch_generator.py
+│   ├── generate_mask.py
+├── models/                # OpenCV DNN model files
+├── base.mp4               # Speaker video
+├── mask.png               # AI-generated mask
+├── .env                   # Configuration file (excluded in git)
+├── README.md              # This file
+```
 
 ---
 
@@ -60,22 +58,25 @@ Edit
 ```bash
 git clone https://github.com/touhidul2100/website-personalized-video-generator.git
 cd website-personalized-video-generator
-2. Install Python dependencies
-bash
-Copy
-Edit
+```
+
+### 2. Install Python dependencies
+
+```bash
 cd video_engine
 pip install -r requirements.txt
-3. Install Node.js dependencies
-bash
-Copy
-Edit
+```
+
+### 3. Install Node.js dependencies
+
+```bash
 cd ../server
 npm install
-4. Create .env file
-env
-Copy
-Edit
+```
+
+### 4. Create `.env` file
+
+```env
 # Loom Upload
 LOOM_COOKIES=[Your Loom session cookies as JSON]
 
@@ -86,58 +87,74 @@ GOOGLE_CREDENTIALS=deviceapprovalsystem-e0bb30378920.json
 
 # Custom Embed API
 LOOM_EMBED_API=http://localhost:3000/getGifEmbed
-💡 Usage
-Step 1: Generate AI Face Mask (Run once)
-bash
-Copy
-Edit
+```
+
+---
+
+## 💡 Usage
+
+### Step 1: Generate AI Face Mask (Run once)
+
+```bash
 python video_engine/generate_mask.py
-Step 2: Batch Process Google Sheet
-bash
-Copy
-Edit
+```
+
+### Step 2: Batch Process Google Sheet
+
+```bash
 python video_engine/batch_generator.py
+```
+
 This script will:
 
-Wait for new URLs + company names
+- Wait for new URLs + company names
+- Generate the video
+- Upload to Loom
+- Write the Loom URL back to the sheet
+- Call your API to get the embed HTML
+- Update the embed column in the sheet
 
-Generate the video
+---
 
-Upload to Loom
+## 🧠 Example API (Loom Embed)
 
-Write the Loom URL back to the sheet
-
-Call your API to get the embed HTML
-
-Update the embed column in the sheet
-
-🧠 Example API (Loom Embed)
-http
-Copy
-Edit
+```http
 POST /getGifEmbed
 Content-Type: application/json
 
 {
   "loomUrl": "https://www.loom.com/share/abc123..."
 }
-Returns:
+```
 
-json
-Copy
-Edit
+**Returns:**
+
+```json
 {
   "gifEmbedCode": "<iframe src='...' width='...' height='...'></iframe>"
 }
-✅ TODO
- Frontend preview of queued/generated videos
+```
 
- Retry system for embed API failures
+---
 
- Support multiple base templates
+## ✅ TODO
 
- Dockerize pipeline
+- [ ] Frontend preview of queued/generated videos
+- [ ] Retry system for embed API failures
+- [ ] Support multiple base templates
+- [ ] Dockerize pipeline
+
+---
 
 ## 📄 License
 
-MIT License © 2025 Touhidul Islam
+This project is licensed under the **MIT License**.
+
+You are free to use, modify, and distribute this code for personal or commercial use.
+
+### 🙏 Attribution
+
+If you use this project publicly or in a commercial product, please give credit:
+
+**Created by [Touhidul Islam](https://github.com/touhidul2100)**  
+A simple mention in your README, website footer, or video credits is appreciated.
