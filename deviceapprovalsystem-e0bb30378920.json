@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "deviceapprovalsystem",
+  "private_key_id": "e0bb303789201441a247d6f11d325868da2cc03c",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDeHaaIlQCpq939\n/vfPMtsn+yNNZ64bK+EsfJhXzNJigh5f0GCINiPKBb1kZHpTSBqJCk+mUCBbAs8m\nc2CD4HRzzOKM4YJjgzBZWN3Khy6KO+9b9re8el4z3wv33g5+wrhjNR57Ox+J74tF\nlFhilRszcOdVMzWk/JCts1kk0k0H2f0QP9JjUrudoeEenacGx70KJ1NJy0If4Ei9\nBYOmA0H0Zh6pVFQkv26/XCp39Kf2IMFnSX43AQLxJ5VFQDBE7lnjvV2k84MmtpBW\nXZyZFsm/eReE/fBI4KjM7iL9qMXcuSbWk6k6j/N3XyKQfwA0xk1r15+TQV1dhOCB\nhlMlBGizAgMBAAECggEALcaZlCt1LAKmKRsbckHOZdJ9p423FZV4/iSddvbY4wFj\nBicZRek2fgOp0R9eEHzbLyQHX0TDLk6JZ6i+mt8u0NDIXfV53E1ksP0+FGfAwS9x\n+JeDrV3gvTr6KfbDMP+rZZLEeewo51INd2UHxCVrqjHaEzaPFzYQESRVul93DadO\nj+4X2tDy0vnMq2yFkHPU/zji54NY4D/d78yCgpC0RJbs5T7smFIynOBoxc7kfIEE\nbOfd2nb07B1F5r+DF8xcq4UCQnXXQnR4sR1pYcXtGqT2e3QSGoZ7ZfZJCvpk4qgE\nWOHUng5UVoIgc1JYoZBl+ZBfPGYnD8owru8NvMSFtQKBgQDzP9VWk80k4VvaGbBM\nE1u/gj04K1RuTgcdcrxtBY4ANJYyfeewVERdkff2kJlDiZEsN2P/YPIQDByl29rs\n2BTwmrpik9MCTMBCWNRIErfNDBm/Tiegqq3WmF5XTjLHDoG3MV7MmgEhePPX4dGZ\ntYWIy7uNQ/VoLwSzcuOveAEn/QKBgQDpwjnfAduDbERdv23mgipHQqPyJvXPjaNp\nmQe9OsaviKciWI6PkSjukPIu4Hk/m7LxRpj+K9ZrzzHY3Z9D38uwdYfjo/q5YpYj\nuy1WeT/ILaIFk7qZc2iapKkjB3b7yAyGSaCuRKuyzvC/GQf7TivmLxTTUi4HxsVi\n7lymKYP6bwKBgFU4F9WtEkHJchSGy2zbm1kMl8YF6B5816FJgRnwyD7qLXSjB3iP\nDSR67xRCtG8k0udawH3HyQY2OBMjYx921F821fWTNGmp2fFkjXpylFIR2zNafieb\npCt6VhLgIon6WxeDBGNJ0PuZFFSdmIDxR0cVmS90j5VgY5U6uunOcRlBAoGABTxw\nh2pHPH5kWaU8FPm9cLMxcO8memu1yVvALKDwamYpOD+7kcOyowVkJ2Cn1qDqNTVb\nn/Xja67Mcwsj0iVlLqKzVIoLx7NJoatDrLgykY1UH8PbXiyTn0Mo9rvoEmO8xBVK\nIB0xq2OvSNiKsTpjCVjson8owMvXCAxGzwIHDskCgYBbhDYo0eguAuNloJXROOXV\nuB72E/JPdMq6iwsUAuIDloo5cDzpy/AuIaTmvhiBvEh51WaKo9lhReyGcqEv5mfo\n3PMvRpVuc1z2WZ3oHM1OlE9/5u9TmQhRiPun5n34W3Re36bhMmEtJXOFyukYARzD\n30dOVEB2wsPYptnNYN/poQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "accesssheetforloomautomation@deviceapprovalsystem.iam.gserviceaccount.com",
+  "client_id": "102358494515977024496",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/accesssheetforloomautomation%40deviceapprovalsystem.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
