@@ -137,3 +137,7 @@ Edit
  Support multiple base templates
 
  Dockerize pipeline
+
+## 📄 License
+
+MIT License © 2025 Touhidul Islam
